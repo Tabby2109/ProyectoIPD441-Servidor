@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fotoFragment">
+
+    <!-- Pantalla principal: buscar por foto -->
+    <fragment
+        android:id="@+id/fotoFragment"
+        android:name="com.tabby.detectorapp.fragments.FotoFragment"
+        android:label="Buscar por Foto"
+        tools:layout="@layout/fragment_foto">
+        <action
+            android:id="@+id/action_fotoFragment_to_resultadosFragment"
+            app:destination="@id/resultadosFragment" />
+    </fragment>
+
+    <!-- Pantalla de resultados (navegación interna, no aparece en bottom nav) -->
+    <fragment
+        android:id="@+id/resultadosFragment"
+        android:name="com.tabby.detectorapp.fragments.ResultadosFragment"
+        android:label="Resultados"
+        tools:layout="@layout/fragment_resultados" />
+
+    <!-- Buscar por texto -->
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.tabby.detectorapp.fragments.SearchFragment"
+        android:label="Buscar por Texto"
+        tools:layout="@layout/fragment_search" />
+
+    <!-- Páginas de compra -->
+    <fragment
+        android:id="@+id/storeFragment"
+        android:name="com.tabby.detectorapp.fragments.StoreFragment"
+        android:label="Páginas de Compra"
+        tools:layout="@layout/fragment_store" />
+</navigation>
