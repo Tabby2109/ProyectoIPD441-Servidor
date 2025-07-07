@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fotoFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="#000">
+
+    <RadioGroup
+        android:id="@+id/radioModo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <RadioButton
+            android:id="@+id/radioClip"
+            android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Solo CLIP"
+            android:checked="true"
+            android:textColor="@color/white"/>
+
+        <RadioButton
+            android:id="@+id/radioYoloClip"
+            android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YOLO + CLIP"
+            android:textColor="@color/white"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnTomarFoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📷 Tomar foto"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnSubirImagen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🖼️ Subir desde galería" />
+
+</LinearLayout>
